@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Orbitron', sans-serif;
+    
 }
 
 body {
@@ -11,9 +12,10 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #060a1f;
+    
 }
 
-#clock {
+#clock h2{
     position: relative;
     display: block;
     color: #fff;
@@ -23,10 +25,12 @@ body {
     text-transform: uppercase;
     letter-spacing: .4rem;
     font-size: .8rem;
+    
 }
 
 #clock #time {
     display: flex;
+    
 }
 
 #clock #time div {
@@ -51,7 +55,7 @@ body {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
-#clock #time div span :nth-child(2) {
+#clock #time div span:nth-child(2) {
     height: 30px;
     font-size: .7em;
     letter-spacing: .2em;
@@ -61,3 +65,28 @@ body {
     background: #127fd6;
     text-transform: uppercase;
 }
+
+#clock #time div:nth-last-child(2) span {
+    background: #ff006a;
+}
+
+#clock #time div:nth-last-child(2) span:nth-child(2) {
+    background: #ec0062;
+}
+
+#clock #time div:nth-last-child(1) span {
+    position: relative;
+    bottom: 0;
+    width: 60px;
+    height: 40px;
+    font-size: 1.5em;
+    background: #33ff06;
+    color: #000;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0004);
+}
+
+
+
+
+
+
